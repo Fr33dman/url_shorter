@@ -17,7 +17,7 @@ services:
   documentation:
     restart: always
     build: ./
-    command: "mkdocs serve"
+    command: "mkdocs serve --dev-addr 0.0.0.0:8001"
     volumes:
       - ./:/code
     ports:
